@@ -1,0 +1,10 @@
+
+interface Labtop {
+void monitor();
+void keyboard();
+}
+class Hp implements Labtop
+{
+	
+	
+}

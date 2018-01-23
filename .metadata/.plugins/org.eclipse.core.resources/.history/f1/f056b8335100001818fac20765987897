@@ -1,15 +1,15 @@
-
+//*****Main Method*****
  class Inherh_BFromA  {
 public static void main(String[]args){
 	
-	b k= new b();
+	Y k= new Y();
 	k.m2();
 	k.m1();
 }
 }
  
  //--------Class X------
-class a
+class X
 {
 public	void m1()
 {
@@ -17,7 +17,7 @@ public	void m1()
 }
 }
 //---------Class y------
-class b extends a
+class Y extends X
 {
  public	void m2(){
 		System.out.println("M2 of class B");

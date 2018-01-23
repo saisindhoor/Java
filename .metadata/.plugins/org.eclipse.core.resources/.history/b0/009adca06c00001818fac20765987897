@@ -1,0 +1,15 @@
+
+interface Labtop {
+void monitor();
+void keyboard();
+}
+class Hp implements Labtop
+{
+	public void monitor(){System.out.println("displays");}
+	public void keyboard(){}
+	public static void main(String[]args){
+		
+		
+	}
+	
+}

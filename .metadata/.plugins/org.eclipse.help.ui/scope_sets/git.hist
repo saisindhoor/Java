@@ -1,0 +1,6 @@
+#Mon Jan 22 21:13:25 EST 2018
+__DEFAULT__=false
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.sdk.Google.master=true
+org.eclipse.help.ui.localSearch.master=true
+expression=git
