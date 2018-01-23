@@ -1,0 +1,27 @@
+
+ class Inherh_BFromA  {
+public static void main(String[]args){
+	
+	B k= new B();
+	k.m2();
+	k.m1();
+}
+}
+ 
+ //--------
+class A extends Inherh_BFromA
+{
+public	void m1()
+{
+		System.out.println("m1 of class A");
+}
+}
+//---------
+class B extends A
+{
+ public	void m2(){
+		System.out.println("M2 of class B");
+	}
+	
+}
+	

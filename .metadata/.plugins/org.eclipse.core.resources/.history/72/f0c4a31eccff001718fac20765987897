@@ -1,0 +1,11 @@
+
+public class Static {
+static void A(){System.out.println("123456");}
+	public static void main(String[] args) {
+		
+		Static.A();
+		System.out.println();
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;InherhA&apos; to &apos;Inherh_BFromA&apos;&#x0D;&#x0A;- Original project: &apos;Application&apos;&#x0D;&#x0A;- Original element: &apos;InherhA&apos;&#x0D;&#x0A;- Renamed element: &apos;Inherh_BFromA&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;InherhA&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{InherhA.java[InherhA" matchStrategy="1" name="Inherh_BFromA" qualified="false" references="true" similarDeclarations="false" stamp="1516669707779" textual="false" version="1.0"/>
+</session>
