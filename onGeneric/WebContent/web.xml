@@ -1,0 +1,11 @@
+<web-app>
+<servlet>
+<servlet-name>sai</servlet-name>
+<sevlet-class>gen</sevlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>sai</servlet-name>
+<url-pattern>/welcom</url-pattern>
+
+</servlet-mapping>
+</web-app>

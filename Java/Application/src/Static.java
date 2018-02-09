@@ -1,0 +1,14 @@
+
+public class Static {
+static void A(){System.out.println("123456");}//sTatic method
+static{                            //static block is executed first
+	
+	System.out.println("numbers");
+}
+	public static void main(String[] args) {
+		
+		Static.A();            // static method is called using class name
+
+	}
+
+}
