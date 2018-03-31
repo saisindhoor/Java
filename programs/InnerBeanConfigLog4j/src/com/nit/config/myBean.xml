@@ -1,0 +1,14 @@
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+<bean id="waterBean"  class="com.nit.bean.WaterBean" >
+<property name="fishBean" >
+<bean class="com.nit.bean.FishBean" >
+ <property name="fishName" value="GlodFish" />
+</bean>
+</property>
+
+</bean>
+</beans>

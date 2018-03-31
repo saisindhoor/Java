@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+        
+       <!--  <context:component-scan base-package="com.myapps.dao"/> -->
+        <context:property-placeholder 
+        location="classpath:/com/myapps/config/database.properties"/>
+        
+         <!-- 
+         (OR)
+         <bean id="propertyPlaceholderConfigurer"
+                                        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+         <property name="locations">
+         <list>
+         <value>classpath:/com/nareshit/config/database.properties</value>
+         </list>
+         </property>
+         </bean> -->
+         <bean id="dataSource"
+         class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+         <property name="driverClassName"  value="${oracle.driver}"/>
+         <property name="url"   value="${oracle.url}"/>
+         <property name="username" value="${oracle.username}"/>
+         <property name="password" value="${oracle.password}"/>
+         </bean>
+         <bean id="jdbcTemplate" 
+         class="org.springframework.jdbc.core.JdbcTemplate">
+         <property name="dataSource" ref="dataSource"/>
+         </bean>
+          <bean id="employeeDao"
+         class="com.myapps.dao.EmpDaoImpl">
+         <property name="jdbcTemplate" ref="jdbcTemplate"/>
+         </bean>  
+         </beans>
